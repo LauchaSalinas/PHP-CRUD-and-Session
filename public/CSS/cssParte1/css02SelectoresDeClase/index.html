@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "es">
+<html>
+<head>
+    <title>CSS - Ejercicio 02 Selectores de clase</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
+    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <meta name="author" content="Lautaro Salinas">
+    
+    <style>
+        *.claseResaltado {
+            background-color: yellow;
+            font-weight: bold;
+            font-size: 26px;
+        }
+        p.claseAcotacion{
+            color: blue;
+            border-style: solid;
+            border-color: blue;
+            padding: 1%;
+            border-width: thin;
+            font-style: italic;
+        }
+        p.claseAyuda {
+            color: darkorange;
+            width: 45%;
+            border-style: solid;
+            border-color: yellow;
+            border-width: thin;
+            font-style: italic;
+            text-align: center;
+        }
+        p.claseContenidoComun{
+            font-size: 22px;
+        }
+        #idUnico{
+            color: red;
+            width: 22%;
+            border-style: solid;
+            border-color: red;
+            border-width: thin;
+            font-style: italic;
+            text-align: center;
+            font-size: 20px;
+        } 
+        img.imagenAl50{
+            width: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>A partir de esta página no usaremos más el atributo style en ninguna etiqueta</h1>
+        <h1>Todo el estilo será definido dentro de una etiqueta style como "clase", anidada en la etiqueta head del documento.</h1>
+        <h1>Todos los párrafos tienen un default como estilo que incluyen un margin-bottom para separarlos más entre ellos.</h1>
+    </header>
+
+
+    <main>
+        <p>Este párrafo contiene un grupo de palabras delimitado por una etiqueta "span". El comienzo es aqui: <span class="claseResaltado">grupo de palabras destacadas con el estilo claseResaltado</span>blablabla blablabla blablabla</p>
+        <p class="claseAcotacion">Este parrafo toma el estilo definido en la etiqueta style en el header del documento como class="claseAcotacion" kjashdkjhaskjdhaskjdhakjshdkajshd</p>
+        <p class="claseResaltado">Este párrafo toma el estilo definido en la etiqueta style en el header del documento como class="claseResaltado"</p>
+        <p class="claseAyuda">Este párrafo toma el estilo definido en la etiqueta style en el header del documento como class="claseAyuda"</p>
+        <p class="claseContenidoComun">Este párrafo toma el estilo definido en la etiqueta style en el header del documento como class="claseContenidoComun"</p>
+        <p id="idUnico">Parrafo formateado por un estilo particular definido en el style del documento para un párrafo especifico id+"idUnico". No se trata de un selector de clase sino de un selector de elemento "#"</p>
+        <h1>Todas las imagenes con class="imagenA150" en esta página se encuentra limitadas al 50% del ancho del contenedor mas allá de su tamaño real en pixeles</h1>
+        <img class="imagenAl50" src="../../../HTML/ejer01HtmlBasico/img.jpg" alt="">
+    </main>
+
+    <footer>
+        <h2>Datos del alumno</h2>
+        <p>Lautaro David Salinas</p>
+        <p>Legajo 15-26831</p>
+        <a href="mailto:lsalinas831@alumnos.frh.utn.edu.ar">lsalinas831@alumnos.frh.utn.edu.ar</a>
+    </footer>
+
+</body>
+
+</html>
