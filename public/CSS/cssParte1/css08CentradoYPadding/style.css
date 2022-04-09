@@ -1,0 +1,23 @@
+h1{
+    font-size: 48px;
+}
+
+div{
+    margin: auto;
+    width: 50%;
+}
+
+div#textoEnInterior {
+    background-color: lightblue;
+    
+}
+div#ConPaddingYSinBS {
+    background-color: lightgreen;
+    padding-inline: 5%;
+
+}
+div#ConPaddingYConBS {
+    background-color: lightgoldenrodyellow;
+    padding-inline: 5%;
+    box-sizing: border-box;
+}
