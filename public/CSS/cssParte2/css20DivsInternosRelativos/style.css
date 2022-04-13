@@ -12,7 +12,7 @@ div.divClase1{
     background-color: green;
     margin-left: 0%;
     margin-top: 10px;
-    padding: 2px;
+    padding: 10px;
     box-sizing: border-box;
     font-size: 36px;
     width: 80%;
@@ -49,4 +49,8 @@ div.divClaseModal{
     visibility: visible;
     z-index: 10;
     background-color: blue;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
 }
