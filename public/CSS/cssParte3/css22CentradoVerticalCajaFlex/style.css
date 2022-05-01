@@ -22,5 +22,5 @@ div#contenedorExterior{
     flex-wrap: wrap;
 }
 img{
-    max-width: 2%;
+    max-width: 100%;
 }
