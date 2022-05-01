@@ -3,7 +3,7 @@
     padding: 0px;
 }
 html{
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 body{
@@ -11,7 +11,7 @@ body{
     width: 100%;
 }
 div#contenedorExterior{
-    height: 100%;
+    height: auto;
     width: 90%;
     background-color: lightyellow;
     margin: auto;
@@ -22,5 +22,5 @@ div#contenedorExterior{
     flex-wrap: wrap;
 }
 img{
-    max-width: 100%;
+    max-width: 2%;
 }
