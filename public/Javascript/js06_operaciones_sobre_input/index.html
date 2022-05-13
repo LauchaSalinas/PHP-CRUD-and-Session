@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Ejercicio 06 Operaciones sobre input</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
+    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <meta name="author" content="Lautaro Salinas">
+</head>
+<body>
+    <h1>Introducir un valor en el cuadro de texto y luego pulsar el boton para ejecutar el procedimiento correspondiente.</h1>
+    <input type="text" id="inputTexto">
+    <button id="muestraValor">Muestra Valor</button>
+    <button id="sumar">Suma 1</button>
+    <button id="xEleva2">x^2</button>
+    <button id="multiplica">Multiplica * 2</button>
+    <button id="2ElevaX">2^x</button>
+
+
+    <script type="text/javascript">
+        document.getElementById("muestraValor").onclick = function()
+        {
+            alert(document.getElementById("inputTexto").value);
+        }
+        document.getElementById("sumar").onclick = function()
+        {
+            var inputTextoInt = parseInt(document.getElementById("inputTexto").value);
+            document.getElementById("inputTexto").value = inputTextoInt +1;
+        }
+        document.getElementById("xEleva2").onclick = function()
+        {
+            var inputTextoInt = parseInt(document.getElementById("inputTexto").value);
+            document.getElementById("inputTexto").value = inputTextoInt *inputTextoInt;
+        }
+        document.getElementById("multiplica").onclick = function()
+        {
+            var inputTextoInt = parseInt(document.getElementById("inputTexto").value);
+            document.getElementById("inputTexto").value = inputTextoInt *2;
+        }
+        document.getElementById("2ElevaX").onclick = function()
+        {
+            var inputTextoInt = parseInt(document.getElementById("inputTexto").value);
+            var resultado=2;
+
+            for (i=1; i<inputTextoInt; i++)
+            {
+                resultado = resultado * 2;
+            }
+            document.getElementById("inputTexto").value = resultado;
+        }
+    </script>
+</body>
+</html>

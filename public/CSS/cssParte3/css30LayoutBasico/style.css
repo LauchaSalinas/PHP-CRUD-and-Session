@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+header{
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: aliceblue;
+}
+h1{
+    display: block;
+    font-size: 2em;
+}
+main{
+    height: 80%;
+}
+aside{
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: beige;
+    padding: 30px;
+}
+aside h2{
+    padding: 10px;
+    font-size: xx-large;
+}
+#divLat{
+    float: right;
+    height: 100%;
+    width: 80%;
+    display: block;
+    overflow: overlay;
+    padding: 20px;
+    background-color:floralwhite;
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(211, 211, 211, 0.384);
+}
+/*#divLat:hover{
+    overflow: overlay;
+}*/
+img{
+    width: 32%;
+    float: right;
+    padding: 10px;
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+img:hover{
+    -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(0); /* Microsoft Edge and Firefox 35+ */
+}
+
+@media screen and (max-width: 900px){
+    img{
+        float:none;
+        width: 60%;
+    }
+    aside{
+        padding: 0px;
+    }
+    aside h2{
+        font-size: large;
+        padding: 5%;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1300px){
+
+}
+
+footer{
+    height: 10%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: antiquewhite;
+    font-weight: bold;
+} 

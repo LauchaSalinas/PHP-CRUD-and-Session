@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Ejercicio 27 Forms RWD</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="author" content="Lautaro Salinas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../../Recursos/Imagenes/logo_favicon.ico">
+</head>
+<body>
+    <header><h1>Formulario</h1></header>
+    <main>
+        <form action="./respuestaFormulario.html" target="_blank" method="get">
+            <div class="bodyInputFormulario">
+                <div class="divFormulario">
+                    <label style="font-weight: bold;" for="apellido">Apellido</label> <br/><input type="text" id="apellido" name="apellido" value="" autofocus/>
+                </div>
+                <div class="divFormulario">
+                    <label style="font-weight: bold;" for="nombre">Nombre</label> <br/><input type="text" id="nombre" name="nombre" value=""/>
+                </div>
+                <div class="divFormulario">
+                    <label style="font-weight: bold;" for="contrasena">Contraseña</label> <br/><input type="password" id="contrasena" name="password" value=""/>
+                </div>
+                <div class="divFormulario">
+                    <label style="font-weight: bold;" for="campoDeshabilitado">Campo deshabilitado</label> <br/><input type="text" id="campoDeshabilitado" name="campoDeshabilitado" value="Valor deshabilitado" disabled/>
+                </div>
+                <div class="divFormulario">
+                    <label style="font-weight: bold;" for="fechahora">Fecha y hora</label> <br/>
+                    <input type="datetime-local" id="fechahora" name="fechahora" value=""/>
+                </div>
+                <div class="divFormulario">
+                    <label style="font-weight: bold;" for="DNI">DNI</label> <br/><input type="number" id="DNI" name="DNI" value=""/>
+                </div>
+                <div class="divFormulario">
+                    <label style="font-weight: bold;" >Actividades extracurriculares</label> <br/>
+                    <input type="checkbox" id="musica" name="actExtra" value="musica"/> 
+                    <label style="font-weight: bold;" for="musica">Musica</label><br/>
+                    <input type="checkbox" id="pinturaArtistica" name="actExtra" value="pinturaArtistica"/>
+                    <label style="font-weight: bold;" for="pinturaArtistica">Pintura Artistica</label><br/>
+                    <input type="checkbox" id="deportes" name="actExtra" value="deportes"/>
+                    <label style="font-weight: bold;" for="deportes">Deportes</label><br/>
+                    <input type="checkbox" id="teatro" name="actExtra" value="teatro"/>
+                    <label style="font-weight: bold;" for="teatro">Teatro</label><br/>
+                </div>
+                <div class="divFormulario">
+                    <label style="font-weight: bold;" for="sexo">Sexo</label> <br/>
+                    <input type="radio" id="sexo" name="sexo" value="M" checked/>
+                    <label style="font-weight: bold;" for="sexo">Masculino</label></br>
+                    <input type="radio" id="sexo" name="sexo" value="F"/>
+                    <label style="font-weight: bold;" for="Sexo">Femenino</label>
+                </div>
+                <div class="divFormulario">
+                    <span>VACIO</span>
+                </div>
+                <div class="divFormulario">
+                    <label style="font-weight: bold;" for="Estudios">Estudios</label> <br/>
+                    <select id="Estudios" name="Estudios">
+                        <option value="pri" selected>Primarios</option>
+                        <option value="sec">Secundarios</option>
+                        <option value="ter">Terciarios</option>
+                        <option value="uni">Universitarios</option>
+                        <option value="pos">Postgrado</option>
+                    </select>
+                </div>
+                <div class="divFormulario">
+                    <label style="font-weight: bold;" for="areaDeDesempeño">Area de desempeño</label> <br/>
+                    <select id="areaDeDesempeño" name="areaDeDesempeño">
+                        <option value="admn" selected>Administración</option>
+                        <option value="ven">Venta</option>
+                        <option value="rec">Recursos Humanos</option>
+                        <option value="ger">Gerencia</option>
+                        <option value="pos">Post-Venta</option>
+                    </select>
+                </div>
+                <div class="divFormulario">
+                    <label style="font-weight: bold;" for="turno">Turno</label> <br/>
+                    <select id="turno" name="turno">
+                        <option value="M" selected>Mañana</option>
+                        <option value="T">Tarde</option>
+                        <option value="N">Noche</option>
+                    </select>
+                </div>
+                <div class="divFormulario">
+                    <label style="font-weight: bold;" for="conduce">Conduce</label> <br/>
+                    <input type="radio" id="conduce" name="conduce" value="Y" checked/>
+                    <label style="font-weight: bold;" for="conduce">Si</label></br>
+                    <input type="radio" id="conduce" name="conduce" value="N"/>
+                    <label style="font-weight: bold;" for="conduce">No</label>
+                </div>
+            </div>
+            <div class="bodyFooterFormulario">
+                    <input type="submit" value="Enviar formulario sin validación">
+                    <input type="reset" value="Borrar los campos">
+            </div>
+
+        </form>
+    </main>
+    <footer>Pie de formulario</footer>
+</body>
+</html>

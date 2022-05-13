@@ -31,7 +31,7 @@ div.divInterior{
 
 
     /*fuente*/
-    font-size: 26px;
+    font-size: 16px;
     font-weight: bold;
 
     /*bordes*/
@@ -43,10 +43,27 @@ div.divInterior{
     border-radius: 10px;
 }
 div#contenedorInterior1{
-    background: linear-gradient(orange,white,pink);
     font-size: 1em;
     box-shadow: 16px 8px 2px rgba(0,0,0,0.3);
 }
+@media(max-width: 600px) {
+    div#contenedorInterior1{
+        background-color: lightblue;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 1080px){
+    div#contenedorInterior1{
+        background-color: lightyellow;
+    }
+}
+
+@media(min-width: 1080px) {
+    div#contenedorInterior1{
+        background-color: gray;
+    }
+}
+
 div#contenedorInterior2{
     background: radial-gradient(orange,white,pink);
     font-size: 2em;
@@ -62,6 +79,8 @@ div#contenedorInterior4{
     justify-content: left;
     align-items:flex-start;
     box-shadow: 16px 8px 2px rgba(0,0,0,0.3);
+    padding: 2%;
+    box-sizing: border-box;
     
 }
 div#contenedorInterior5{

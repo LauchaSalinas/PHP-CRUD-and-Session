@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Ejercicio 03 Variables Simples</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
+    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <meta name="author" content="Lautaro Salinas">
+</head>
+
+<body>
+    <h1>Carga de Variables globales</h1>
+    
+    <script type="text/javascript">
+        var z;
+        document.write("<p>variable <span style='color: red;'>z</span> inicializada desde programa: "+z+"</p>");
+        document.write("<p>tipo de <span style='color:red;'>z</span>: "+typeof z+"</p>");
+        
+        var a = 1;
+        document.write("<p>variable <span style='color: red;'>a</span> inicializada desde programa: "+a+"</p>");
+        document.write("<p>tipo de <span style='color:red;'>a</span>: "+typeof a+"</p>");
+
+        var b = "1";
+        document.write("<p>variable <span style='color: red;''>b</span> inicializada desde programa: "+b+"</p>");
+        document.write("<p>tipo de <span style='color:red;'>b</span>: "+typeof b+"</p>");
+        
+        var c = 2;
+        document.write("<p>variable <span style='color: red;''>c</span> inicializada desde programa: "+c+"</p>");
+        document.write("<p>tipo de <span style='color:red;'>c</span>: "+typeof c+"</p>");
+
+        document.write("<p><span style='color: red;''>a+b</span>: "+(a+b)+"</p>");
+        document.write("<p>tipo de <span style='color:red;'>a+b</span>: "+typeof (a+b)+"</p>");
+
+        document.write("<p><span style='color: red;''>a+c</span>: "+(a+c)+"</p>");
+        document.write("<p>tipo de <span style='color:red;'>a+c</span>: "+typeof (a+c)+"</p>");
+
+        var d = prompt("Ingrese un valor para la variable ingresada por teclado: ");
+        document.write("<p>variable <span style='color: red;''>d</span> cargada por el usuario: "+d+"</p>");
+        document.write("<p>tipo de <span style='color:red;'>d</span>: "+typeof d+"</p>");
+
+        </script>
+</body>
+</html>

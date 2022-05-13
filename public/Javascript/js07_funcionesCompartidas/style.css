@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+
+}
+#divExterior{
+    height: 50%;
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
+
+}
+#divInput{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+#divBotones{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: beige;
+}
+#divOperadores{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+}
+input{
+    height: 50%;
+    width: 80%;
+    text-align: right; 
+    padding-right: 3px;
+}
+.botonNumero{
+    width: 27%;
+    height: 12%;
+}
+.botonOperador{
+    width: 37%;
+    height: 35%;
+}

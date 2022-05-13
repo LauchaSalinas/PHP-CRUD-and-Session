@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Ejercicio 07 Funciones Compartidas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
+    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <meta name="author" content="Lautaro Salinas">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="divExterior">
+        <div id="divInput"><input type="text" id="inputValor"></div>
+        <div id="divBotones">
+            <button class="botonNumero" id="btn1">1</button>
+            <button class="botonNumero" id="btn2">2</button>
+            <button class="botonNumero" id="btn3">3</button>
+            <button class="botonNumero" id="btn4">4</button>
+            <button class="botonNumero" id="btn5">5</button>
+            <button class="botonNumero" id="btn6">6</button>
+            <button class="botonNumero" id="btn7">7</button>
+            <button class="botonNumero" id="btn8">8</button>
+            <button class="botonNumero" id="btn9">9</button>
+            <button class="botonNumero" id="btn0">0</button>
+        </div>
+        <div id="divOperadores">
+            <button class="botonOperador" id="btn+">+</button>
+            <button class="botonOperador" id="btnMuestra">Muestra Acumulador</button>
+            <button class="botonOperador" id="btnBorraAcum">Borra Acumulador</button>
+            <button class="botonOperador" id="btnBorraDisp">Borra Display</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var variableAcumulador = 0;
+
+        function borraDisplay(){
+            document.getElementById("inputValor").value = "";
+        }
+
+        document.getElementById("btn1").onclick = function (){
+            document.getElementById("inputValor").value =  document.getElementById("inputValor").value+1;
+        }
+        document.getElementById("btn2").onclick = function (){
+            document.getElementById("inputValor").value =  document.getElementById("inputValor").value+2;
+        }
+        document.getElementById("btn3").onclick = function (){
+            document.getElementById("inputValor").value =  document.getElementById("inputValor").value+3;
+        }
+        document.getElementById("btn4").onclick = function (){
+            document.getElementById("inputValor").value =  document.getElementById("inputValor").value+4;
+        }
+        document.getElementById("btn5").onclick = function (){
+            document.getElementById("inputValor").value =  document.getElementById("inputValor").value+5;
+        }
+        document.getElementById("btn6").onclick = function (){
+            document.getElementById("inputValor").value =  document.getElementById("inputValor").value+6;
+        }
+        document.getElementById("btn7").onclick = function (){
+            document.getElementById("inputValor").value =  document.getElementById("inputValor").value+7;
+        }
+        document.getElementById("btn8").onclick = function (){
+            document.getElementById("inputValor").value =  document.getElementById("inputValor").value+8;
+        }
+        document.getElementById("btn9").onclick = function (){
+            document.getElementById("inputValor").value =  document.getElementById("inputValor").value+9;
+        }
+        document.getElementById("btn0").onclick = function (){
+            document.getElementById("inputValor").value =  document.getElementById("inputValor").value+0;
+        }
+
+        document.getElementById("btn+").onclick = function (){
+            variableAcumulador = variableAcumulador + parseInt(document.getElementById("inputValor").value);
+            document.getElementById("inputValor").value = "";
+        }
+        document.getElementById("btnMuestra").onclick = function(){
+            document.getElementById("inputValor").value = variableAcumulador;
+        }
+        document.getElementById("btnBorraAcum").onclick = function(){
+            variableAcumulador = 0;
+            borraDisplay();
+        }
+        document.getElementById("btnBorraDisp").onclick = function (){
+            borraDisplay();
+        }
+    </script>
+</body>
+</html>
