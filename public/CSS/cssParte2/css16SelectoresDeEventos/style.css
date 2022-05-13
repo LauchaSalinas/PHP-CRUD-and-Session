@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+div#contenedorExterior{
+    width: 80%;
+    height: auto;
+    background-color: lightblue ;
+    margin: auto; /*centra el div exterior*/
+}
+div.divOpciones{
+    float: left;
+    margin: auto;
+
+    /*bordes*/
+    border-style: solid;
+    border-color:  black;
+    border-width: 1px ;
+    
+    background-color: lightskyblue;
+}
+div.divOpciones a{
+    display: inline-block;
+    padding: 15px;
+    width: auto;
+    font-size: 16px;
+}
+div.divOpciones a:hover{
+    color: white;
+    background-color: blue;
+}
+div.divOpciones:active{
+    color: white;
+    background-color: yellow;
+}
+div.divClear{
+    clear: both;
+}
+div.divImagenes{
+    float: left;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color:  black;
+    border-width: 1px ;
+
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+div.divImagenes:active{
+    width: 50%;
+    height: 50%;
+}
+input{
+    display: block;
+}
+input:focus{
+    background-color:#11111111;
+}

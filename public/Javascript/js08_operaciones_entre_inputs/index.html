@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Ejercicio 08 Operaciones entre inputs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
+    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <meta name="author" content="Lautaro Salinas">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="divExterior">
+        <div id="divTitulo"><h4>Introducir un valor en los cuadros de texto y luego pulsar el boton para ejecutar la función correspondiente.</h4></div>
+        <div id="divBotones">
+            <label for="in1">Entrada 1: </label><input type="text" id="in1" value="0" autofocus>
+            <label for="in2">Entrada 2: </label><input type="text" id="in2" value="0">
+            <label for="in3">Entrada 3: </label><input type="text" id="in3" value="0">
+            <label for="inResultado">Resultado: </label><input type="text" id="inResultado">
+        </div>
+        <div id="divOperadores">
+            <button class="botonOperador" id="btnSum">Suma</button>
+            <button class="botonOperador" id="btnProm">Promedia</button>
+            <button class="botonOperador" id="btnMayor">Mayor</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function mayor(arg1, arg2){
+            if (arg1>=arg2){
+                return arg1;
+            }
+            return arg2;
+        }
+
+        document.getElementById("btnSum").onclick = function () 
+        {
+            document.getElementById("inResultado").value = parseInt(document.getElementById("in1").value) + parseInt(document.getElementById("in2").value) + parseInt(document.getElementById("in3").value)
+        }
+
+        document.getElementById("btnProm").onclick = function () 
+        {
+            document.getElementById("inResultado").value = (parseInt(document.getElementById("in1").value) + parseInt(document.getElementById("in2").value) + parseInt(document.getElementById("in3").value))/3
+        }
+
+        document.getElementById("btnMayor").onclick = function () 
+        {
+            document.getElementById("inResultado").value = mayor(mayor(parseInt(document.getElementById("in1").value),parseInt(document.getElementById("in2").value)),parseInt(document.getElementById("in3").value));
+        }
+
+    </script>
+</body>
+</html>

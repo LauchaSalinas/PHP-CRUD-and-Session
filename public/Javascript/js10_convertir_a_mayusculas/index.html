@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Ejercicio 10 Convertir a mayúsculas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
+    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <meta name="author" content="Lautaro Salinas">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="divExterior">
+        <label for="inNombre">Ingrese Nombre:</label><input type="text" id="inNombre" autofocus></br>
+        <label for="inApellido">Ingrese Apellido:</label><input type="text" id="inApellido">
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("inNombre").onchange = function(){
+            this.value = this.value.toUpperCase();
+        }
+        document.getElementById("inApellido").onchange = function(){
+            this.value = this.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>

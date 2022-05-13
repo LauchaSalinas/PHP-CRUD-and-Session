@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-size: 8px;
+    font-size: 100%;
+}
+body{
+    height: 100vw;
+}
+div#contenedorExterior{
+    width: 60%;
+    height: 100%;
+    background-color: lightskyblue ;
+    margin: auto; /*centra el div exterior*/
+
+    /*orientación de los flex box interiores*/
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+div.divInterior{
+    width: 60%;
+    height: 15%;
+    margin: 5% auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    /*fuente*/
+    font-size: 16px;
+    font-weight: bold;
+
+    /*bordes*/
+    border-style: solid;
+    border-color:  black;
+    border-width: 1px ;
+    
+    /*bordes redondeados*/
+    border-radius: 10px;
+}
+div#contenedorInterior1{
+    font-size: 1em;
+    box-shadow: 16px 8px 2px rgba(0,0,0,0.3);
+}
+@media(max-width: 600px) {
+    div#contenedorInterior1{
+        background-color: lightblue;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 1080px){
+    div#contenedorInterior1{
+        background-color: lightyellow;
+    }
+}
+
+@media(min-width: 1080px) {
+    div#contenedorInterior1{
+        background-color: gray;
+    }
+}
+
+div#contenedorInterior2{
+    background: radial-gradient(orange,white,pink);
+    font-size: 2em;
+}
+div#contenedorInterior3{
+    background: linear-gradient(45deg,orange,white,pink);
+    padding: 5%;
+    box-sizing: border-box;
+}
+div#contenedorInterior4{
+    background: linear-gradient(-45deg,orange,white,pink);
+    display: flex;
+    justify-content: left;
+    align-items:flex-start;
+    box-shadow: 16px 8px 2px rgba(0,0,0,0.3);
+    padding: 2%;
+    box-sizing: border-box;
+    
+}
+div#contenedorInterior5{
+    background: linear-gradient(45deg,orange,white,pink);
+    display: flex;
+    justify-content: left;
+    align-items:flex-start;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 1%;
+}

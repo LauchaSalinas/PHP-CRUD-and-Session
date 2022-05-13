@@ -1,0 +1,67 @@
+#menu{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+#menu:visited{
+    color: black;
+}
+a{
+    color: black;
+}
+aside h2{
+    text-align: center;
+}
+#menu ul{
+    list-style: none;
+}
+#menu ul li {
+    background-color:ghostwhite;
+    width: 100%;
+    position: relative;
+}
+#menu ul a{
+    text-decoration: none;
+    padding: 10px;
+}
+#menu ul ul{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    display: none;
+}
+
+#menu ul ul li{
+    float: none;
+    width: auto;
+}
+#menu ul ul a{
+    padding: 10px;
+}
+#menu ul li:hover ul{
+    display: block;
+}
+#menu ul ul li a:hover{
+    transform: scale(1.2, 1.2) translate(12px,0); 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+a{
+    display: block;
+}
+a:hover{
+    background-color: rgb(191, 160, 250);
+}
+
+@media screen and (max-width: 900px){
+    #menu{
+        font-size: small;
+    }
+}
+@media screen and (min-width: 900px){
+    #menu{
+        font-size:large;
+    }
+}

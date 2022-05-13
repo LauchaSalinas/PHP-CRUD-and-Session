@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+*:visited{
+    color: white;
+}
+html{
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    height: 100%;
+}
+header{
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+h1{
+    display: block;
+    font-size: 2em;
+}
+main{
+    height: 40%;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+thead{
+    height: 15%;
+    display: block;
+    table-layout: fixed;
+}
+tbody{
+    height: 85%;
+    overflow: auto;
+    display: block;
+}
+tr{
+    display: table;
+    width: 100%;
+}
+thead tr{
+    height: 100%;
+    background-color: rgba(38, 231, 86, 0.2);
+}
+tbody tr{
+    height: 40px;
+}
+.id{
+    width: 5%;
+}
+.nick,.twitter{
+    width:15%;
+}
+.mail,.web,.skype{
+    width: 20%;
+}
+tbody tr:nth-child(even) {
+    background: rgba(38, 231, 86, 0.2);
+}
+tbody tr:nth-child(odd) {
+    background: rgba(6, 161, 45, 0.2);
+}
+
+@media screen and (max-width: 500px){
+    .mail,.twitter,.web,.skype{
+        display: none;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 700px){
+    .twitter,.web,.skype{
+        display: none;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px){
+    .twitter,.skype{
+        display: none;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+    .skype{
+        display: none;
+    }
+}
+
+footer{
+    height: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+} 
