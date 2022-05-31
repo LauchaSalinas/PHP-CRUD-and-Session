@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especiales - Ejercicio 5 Formulario Variable Arreglo de Objetos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
+    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <meta name="author" content="Lautaro Salinas">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>Formulario de Alta - Articulos</header>
+    <main>
+        <form id="form">
+            <div class="divInterno">
+                <label for="codArticulo">Código del Artículo</label>
+                <input id="codArticulo" name="codArticulo" type="text" required>
+            </div>
+            <div class="divInterno">
+                <label for="desc">Descripción</label>
+                <input id="desc" name="desc" type="text" required>
+            </div>
+            <div class="divInterno">
+                <label for="stock">Stock</label>
+                <input id="stock" name="stock" type="number" required>
+            </div>
+            <div class="divInterno">
+                <label for="cat">Categoría</label>
+                <select id="cat" name="cat" required></select>
+            </div>
+            <div class="divInterno">
+                <label for="marca">Marca</label>
+                <input id="marca" name="marca" type="text" required>
+            </div>
+            <div class="divInterno">
+                <label for="fechaAlta">Fecha Alta</label>
+                <input id="fechaAlta" name="fechaAlta" type="date" required>
+            </div>
+            <div class="divInterno">
+                <button id="btnSubmit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer>Pie del Formulario</footer>
+</body>
+<script src="../jquery-3.6.0.js"></script>
+<script type="module" src="./main.js"></script>
+<script src="../catsJSON.js" type="text/javascript"></script>
+</html>

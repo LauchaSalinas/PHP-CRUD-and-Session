@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Ejercicio 21 Formulario Confirmación</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
+    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <meta name="author" content="Lautaro Salinas">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="divInputs">
+        <form id="form" action="none">
+            <label for="inNombre">Nombre:</label></br>
+            <input id="inNombre" type="text" autofocus autocomplete="name" required></br></br>
+            <label for="inApellido">Apellido:</label></br>
+            <input id="inApellido" type="text" autocomplete="family-name" required></br></br>
+        </form>
+        </br>
+    </div>
+    <div id="divControl">
+        <button id="btnReset">Reset</button>
+        <button id="btnEnviar">Enviar</button>
+    </div>
+    <div id="divPresentacion">
+    </div>
+    <script type="text/javascript">
+
+        var formulario = document.getElementById("form");
+        formulario.action = "./respuestaFormulario.html";
+        formulario.target = "_blank";
+        formulario.method = "GET";
+
+        var btnReset = document.querySelector("#btnReset");
+        var btnEnviar = document.querySelector("#btnEnviar");
+        var nombre = document.querySelector('#inNombre');
+        var apellido = document.querySelector('#inApellido');
+
+        function chequearInputs()
+        {
+            if (document.querySelector('#inNombre').checkValidity() == true) return 1;
+            if (document.querySelector('#inApellido').checkValidity() == true) return 2;
+            return 0;
+        }
+
+        btnEnviar.onclick = function(){
+            if(nombre.checkValidity() && apellido.checkValidity()) {
+                var confirmaSend = confirm("¿Seguro quiere enviar el formulario?");
+                if(confirmaSend == true){
+                    formulario.submit();
+                    formulario.reset();
+                }
+                nombre.select();
+            }else{
+                alert("Debe completar todos los campos")
+                if(!apellido.checkValidity()) apellido.select();
+                else nombre.select();
+            }
+        }
+        btnReset.onclick = function(){
+            if(nombre.checkValidity() || apellido.checkValidity()) var confirmaReset = confirm("¿Seguro quiere vaciar el contenido?");
+            if(confirmaReset == true) form.reset();
+            nombre.select();
+        }
+
+    </script>
+</body>
+</html>

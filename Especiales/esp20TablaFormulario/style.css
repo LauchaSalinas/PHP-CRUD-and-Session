@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(184, 184, 184);
+}
+
+footer{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(184, 184, 184);
+}
+
+main{
+    height: 80%;
+    width: 100%;
+    background-color: rgb(207, 207, 207);
+}
+#divBotones{
+    position: fixed;
+    top: 0%;
+    right: 5%;
+    width: 400px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#divBotones button{
+    width: 40%;
+}
+
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    /* background-color: tomato; */
+}
+
+tfoot td {
+    text-align: center;
+}
+
+thead th, tfoot td {
+    border: 2px solid rgb(138, 138, 138);
+    background-color: rgb(202, 196, 191);
+}
+
+tbody {
+    height: 85.7%;
+    display: block;
+    overflow-y: auto;
+}
+
+thead, tbody tr, tfoot {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    height: 7%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(173, 173, 173);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(211, 211, 211);
+}
+
+tbody td {
+    padding-left: 1.5%;
+    text-align: center;
+}
+
+[campo-dato="codigo"],
+[campo-dato="valor"],
+#saldo {
+    width: 10%;
+}
+
+[campo-dato="fechaAlta"] {
+    width: 15%;
+}
+
+[campo-dato="cat"] {
+    width: 20%;
+}
+
+[campo-dato="saldo"] {
+    padding-left: 2%;
+    width: 10%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: lightgray;
+}
+
+.divInterno{
+    height: 20%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+label{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+select{
+    width: 100%;
+    height: 50%;
+}
+form button{
+    width: 80%;
+}
+input{
+    width: 100%;
+    height: 50%;
+}
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+.activeContainer {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.deactivatedContainer {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+
+/* #####  VENTANA MODAL  ##### */
+.modalWindowEnabled {
+    visibility: visible;
+}
+
+.modalWindowDisabled {
+    visibility: hidden;
+}
+
+#modalWindow{
+    position: fixed;
+    top: 25%;
+    left: 30%;
+    width: 40%;
+    height: 50%;
+}
+
+.modalWindowHeader {
+    width: 100%;
+    height: 8%;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: whitesmoke;
+}
+
+#btnCloseWindow {
+    background-color: #FC4646;
+    border: solid 4px #CC2E32;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    color: rgb(65, 65, 65);
+    font-weight: 600;
+    border: none;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnCloseWindow:hover {
+    cursor: pointer;
+}
+
+/*** MW BODY || Form Section ***/
+#mwBody {
+    height: 92%;
+}
+
+#mwHeader, 
+#mwFooter {
+    height: 10%;
+    color: whitesmoke;
+    background-color: rgb(82, 82, 82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(82, 82, 82);
+    display: flex;
+    align-items: center;
+}
+#mwBody h2,
+#mwBody h3 {
+    margin: 0 auto;
+    text-align: center;
+}

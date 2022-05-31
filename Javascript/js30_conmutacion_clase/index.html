@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Ejercicio 30 Conmutación Clase</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
+    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <meta name="author" content="Lautaro Salinas">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Ejemplo de cambios de estilo dinámicamente</h1>
+    <div class="divExterno1" id="divExterno">
+        <h4>Lista con estilo</h4>
+        <ul>
+            <li>Texto 1</li>
+            <li>Texto 2</li>
+            <li>Texto 3</li>
+        </ul>
+
+
+    </div>
+    <div id="divControles">
+        <button id="btnEstilo1">Estilo 1</button>
+        <button id="btnEstilo2">Estilo 2</button>
+        <button id="btnEstilo3">Estilo 3</button>
+        <button id="btnEstilo4">Estilo 4</button>
+    </div>
+    <script type="text/javascript">
+        var btnEstilo1 = document.querySelector("#btnEstilo1");
+        var btnEstilo2 = document.querySelector("#btnEstilo2");
+        var btnEstilo3 = document.querySelector("#btnEstilo3");
+        var btnEstilo4 = document.querySelector("#btnEstilo4");
+
+        btnEstilo1.onclick = function (){document.getElementById('divExterno').className="divExterno1";};
+        btnEstilo2.onclick = function (){document.getElementById('divExterno').className="divExterno2";};
+        btnEstilo3.onclick = function (){document.getElementById('divExterno').className="divExterno3";};
+        btnEstilo4.onclick = function (){document.getElementById('divExterno').className="divExterno4";};
+
+
+
+    </script>
+</body>
+</html>

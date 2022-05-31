@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+#divExterno{
+    width: 60%;
+    height: 20%;
+    padding: 20px;
+}
+button{
+    width: 100px;
+    height: 20px;
+}
+.divExterno1{
+    background-color: aliceblue;
+}
+.divExterno2{
+    background-color: rgb(170, 255, 175);
+    border-color: black;
+    border: solid;
+}
+.divExterno3{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.divExterno4{
+    background-color: rgb(252, 158, 255)
+}

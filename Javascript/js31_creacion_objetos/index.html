@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Ejercicio 30 Conmutación Clase</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
+    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <meta name="author" content="Lautaro Salinas">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="divControles">
+        <button id="btnCrear">Crear</button>
+        <button id="btnLimpiar">Limpiar</button>
+        <button id="btnInfo">Info</button>
+    </div>
+    
+    <div id="divExterno">
+        <div id="divInterno">
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var btnCrear = document.querySelector("#btnCrear");
+        var btnLimpiar = document.querySelector("#btnLimpiar");
+        var btnInfo = document.querySelector("#btnInfo");
+
+        btnCrear.onclick = function ()
+        {
+            var objDiv = document.createElement("div");
+            var textoHtml = "<h1>Elemento creado: " ;
+            textoHtml = textoHtml + document.getElementById("divInterno").childNodes.length;
+            textoHtml = textoHtml + "</H1>";
+            objDiv.className="claseObjetoDinamico";
+            document.getElementById("divInterno").appendChild(objDiv);
+            objDiv.innerHTML = textoHtml;
+        };
+
+        btnLimpiar.onclick = function ()
+        {
+            while(document.getElementById("divInterno").childNodes.length>0) 
+            {
+                document.getElementById("divInterno").removeChild(document.getElementById("divInterno").childNodes[0]);
+            }
+        
+        };
+
+        btnInfo.onclick = function ()
+        {
+            alert("Longitud del childNodes: " + document.getElementById("divInterno").childNodes.length)
+            document.getElementById("divInterno").childNodes.forEach(function callback(value, index) {
+                alert("Indice: " + `${index}` + " "+value.innerHTML);
+            });;
+        };
+        document.onload
+        {
+            while(document.getElementById("divInterno").childNodes.length>0) 
+            {
+                document.getElementById("divInterno").removeChild(document.getElementById("divInterno").childNodes[0]);
+            }
+        }
+
+    </script>
+</body>
+</html>

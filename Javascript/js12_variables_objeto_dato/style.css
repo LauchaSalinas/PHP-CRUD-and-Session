@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 90%;
+    width: 100%;
+
+}
+#divInputs{
+    height: 30%;
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: aliceblue;
+    display: grid;
+    align-content: center;
+    padding: 3%;
+}
+
+#divControl{
+    width: 40%;
+    margin: auto;
+    background-color: rgb(179, 219, 255);
+    display: flex;
+    align-content: center;
+    padding: 3%;
+    justify-content: center;
+}
+button {
+    width: 100%;
+}
+
+#divPresentacion{
+    width: 40%;
+    margin: auto;
+    background-color: rgb(123, 201, 231);
+    display: none;
+    align-content: center;
+    padding: 3%;
+    justify-content: center;
+}
+#controlTabla {
+    max-height: 170px;
+    overflow-y: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tr {
+    border-collapse: collapse;
+    max-width: 100%;
+}
+
+td {
+    column-width: 235px;
+    border: 2px solid rgb(69, 69, 69);
+    padding: 2px;
+}

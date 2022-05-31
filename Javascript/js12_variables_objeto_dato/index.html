@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Ejercicio 12 Variables Objeto Dato</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
+    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <meta name="author" content="Lautaro Salinas">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="divInputs">
+        <form id="form" action="none">
+            <label for="inNombre">Nombre:</label></br>
+            <input id="inNombre" type="text" autofocus autocomplete="name" required></br></br>
+            <label for="inApellido">Apellido:</label></br>
+            <input id="inApellido" type="text" autocomplete="family-name" required></br></br>
+            <label for="inFechaNac">Fecha de nacimiento:</label></br>
+            <input id="inFechaNac" type="date" autocomplete="bday" required></br></br>
+        </form>
+        </br>
+        <button id="btnCrearPersona">Crear persona</button>
+    </div>
+    <div id="divControl">
+        <button id="btnListaPersonas">Lista Personas</button>
+        <button id="btnOcultaPresentacion">Oculta Presentacion</button>
+    </div>
+    <div id="divPresentacion">
+    </div>
+    <script type="text/javascript">
+
+        var persona1 = {nombre: "Lautaro David", apellido: "Salinas", fechaNac: "12/11/1994"};
+        var arregloPersonas = [persona1];
+        arregloPersonas.push({ nombre: "David Lautaro", apellido: "Sanilas", fechaNac: "11/12/1994"});
+        var objetoPersonas = {personas : arregloPersonas};
+
+        var nombre, apellido, fechaNac;
+
+        function chequearInputs()
+        {
+            if (document.querySelector('#inNombre').checkValidity() == false) return false;
+            if (document.querySelector('#inApellido').checkValidity() == false) return false;
+            if (document.querySelector('#inFechaNac').checkValidity() == false) return false;
+            return true;
+        }
+        function cargarInputs()
+        {
+            nombre = document.querySelector('#inNombre').value;
+            apellido = document.querySelector('#inApellido').value;
+            fechaNac = document.querySelector('#inFechaNac').value;
+            objetoPersonas.personas.push({ nombre: nombre, apellido: apellido, fechaNac: fechaNac.substring(8,10)+"/"+fechaNac.substring(5,7)+"/"+fechaNac.substring(0,4)});
+            document.getElementById("form").reset();
+            if (divPresentacion.style.display == "blo")
+            {
+                cargarLista();
+            }
+        }
+        function cargarLista()
+        {
+            var textoLista = "<h3>Presentación</h3><div id='controlTabla'>\n\
+                            <table>\n\
+                                <tbody>\n";
+                objetoPersonas.personas.forEach(pers => {    
+                    textoLista = textoLista + "       <tr>\n\
+                                        <td id='personas'>" + pers.nombre + "</td>\n\
+                                        <td id='personas'>" + pers.apellido + "</td>\n\
+                                        <td id='personas'>" + pers.fechaNac + "</td>\n\
+                                    </tr>\n";
+                });
+
+                textoLista = textoLista + "       </tbody>\n\
+                            </table>\n\
+                        </div>\n\
+                        <p class='longitudArray'>Longitud del arreglo: <span>" + objetoPersonas.personas.length + "</span></p>";
+            divPresentacion.innerHTML = textoLista;
+        }
+
+        var btnCrearPersona = document.querySelector('#btnCrearPersona');
+        var btnListaPersonas = document.querySelector('#btnListaPersonas');
+        var btnOcultaPresentacion = document.querySelector('#btnOcultaPresentacion');
+        var divPresentacion = document.querySelector('#divPresentacion');
+        
+        btnCrearPersona.onclick = function () 
+        {
+            if (!chequearInputs()) alert("Por favor complete todos los campos");
+            else cargarInputs();
+        }
+
+        btnListaPersonas.onclick = function()
+        {
+            cargarLista();
+            divPresentacion.style.display = "block";
+            
+        }
+        btnOcultaPresentacion.onclick = function()
+        {
+            divPresentacion.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>

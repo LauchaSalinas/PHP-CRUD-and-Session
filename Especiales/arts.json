@@ -1,0 +1,124 @@
+{
+   "items":[
+      {
+         "cod":"SGSL57WH",
+         "desc":"GUITARRA ELECTRICA SLICK GUITARS SL57 WH STRATOCASTER",
+         "cat":"GUITARRAS ELECTRICAS",
+         "val":58728.61,
+         "stock":5,
+         "fechaAlta":"2022-01-01"
+      },
+      {
+         "cod":"SGSL54BWN",
+         "desc":"GUITARRA ELECTRICA SLICK GUITARS SL54 BWN STRATOCASTER",
+         "cat":"GUITARRAS ELECTRICAS",
+         "val":48356.73,
+         "stock":3,
+         "fechaAlta":"2022-03-21"
+      },
+      {
+         "cod":"TD17KVL",
+         "desc":"BATERIA ELECTRONICA ROLAND TD17 KVL",
+         "cat":"BATERIAS ELECTRONICAS",
+         "val":431114.11,
+         "stock":2,
+         "fechaAlta":"2021-01-01"
+      },
+      {
+         "cod":"IBSR405EQM",
+         "desc":"BAJO ELECTRICO IBANEZ SR405EQM DE 5 CUERDAS",
+         "cat":"GUITARRAS ELECTRICAS",
+         "val":128734.96,
+         "stock":2,
+         "fechaAlta":"2022-04-01"
+      },
+      {
+         "cod":"AF510OP",
+         "desc":"GUITARRA ACUSTICA AF510OP NATURAL CON FUNDA CORT",
+         "cat":"GUITARRAS ACUSTICAS",
+         "val":36929.38,
+         "stock":3,
+         "fechaAlta":"2020-01-01"
+      },
+      {
+         "cod":"SGSL57WH",
+         "desc":"GUITARRA ELECTRICA SLICK GUITARS SL57 WH STRATOCASTER",
+         "cat":"GUITARRAS ELECTRICAS",
+         "val":58728.61,
+         "stock":5,
+         "fechaAlta":"2022-01-01"
+      },
+      {
+         "cod":"SGSL54BWN",
+         "desc":"GUITARRA ELECTRICA SLICK GUITARS SL54 BWN STRATOCASTER",
+         "cat":"GUITARRAS ELECTRICAS",
+         "val":48356.73,
+         "stock":3,
+         "fechaAlta":"2022-03-21"
+      },
+      {
+         "cod":"TD17KVL",
+         "desc":"BATERIA ELECTRONICA ROLAND TD17 KVL",
+         "cat":"BATERIAS ELECTRONICAS",
+         "val":431114.11,
+         "stock":2,
+         "fechaAlta":"2021-01-01"
+      },
+      {
+         "cod":"IBSR405EQM",
+         "desc":"BAJO ELECTRICO IBANEZ SR405EQM DE 5 CUERDAS",
+         "cat":"GUITARRAS ELECTRICAS",
+         "val":128734.96,
+         "stock":2,
+         "fechaAlta":"2022-04-01"
+      },
+      {
+         "cod":"AF510OP",
+         "desc":"GUITARRA ACUSTICA AF510OP NATURAL CON FUNDA CORT",
+         "cat":"GUITARRAS ACUSTICAS",
+         "val":36929.38,
+         "stock":3,
+         "fechaAlta":"2020-01-01"
+      },
+      {
+         "cod":"SGSL57WH",
+         "desc":"GUITARRA ELECTRICA SLICK GUITARS SL57 WH STRATOCASTER",
+         "cat":"GUITARRAS ELECTRICAS",
+         "val":58728.61,
+         "stock":5,
+         "fechaAlta":"2022-01-01"
+      },
+      {
+         "cod":"SGSL54BWN",
+         "desc":"GUITARRA ELECTRICA SLICK GUITARS SL54 BWN STRATOCASTER",
+         "cat":"GUITARRAS ELECTRICAS",
+         "val":48356.73,
+         "stock":3,
+         "fechaAlta":"2022-03-21"
+      },
+      {
+         "cod":"TD17KVL",
+         "desc":"BATERIA ELECTRONICA ROLAND TD17 KVL",
+         "cat":"BATERIAS ELECTRONICAS",
+         "val":431114.11,
+         "stock":2,
+         "fechaAlta":"2021-01-01"
+      },
+      {
+         "cod":"IBSR405EQM",
+         "desc":"BAJO ELECTRICO IBANEZ SR405EQM DE 5 CUERDAS",
+         "cat":"GUITARRAS ELECTRICAS",
+         "val":128734.96,
+         "stock":2,
+         "fechaAlta":"2022-04-01"
+      },
+      {
+         "cod":"AF510OP",
+         "desc":"GUITARRA ACUSTICA AF510OP NATURAL CON FUNDA CORT",
+         "cat":"GUITARRAS ACUSTICAS",
+         "val":36929.38,
+         "stock":3,
+         "fechaAlta":"2020-01-01"
+      }
+   ]
+}

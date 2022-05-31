@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especiales - Ejercicio 15 Ventana Modal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
+    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <meta name="author" content="Lautaro Salinas">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Este es el Div Contenedor</h1></header>
+        <main>
+            <h2>Ayudas para el ejercicio</h2>
+            <p>El div contenedor deberá ser desactivado cuando se activa la ventana modal.</br>
+                Desactivar el contenedor podría ser darle transparencia y deshabilitar todos sus botones.
+            </p></br>
+            <h3>Desactivado:
+            </h3>
+            <p>
+                pointer-events: none</br>
+                opacity: 0.3
+            </p></br>
+            <h3>Activado:
+            </h3>
+            <p>
+                pointer-events: auto</br>
+                opacity: 1
+            </p>
+        </main>
+        <footer>Pie del Formulario</footer>
+        <div id="divBotones">
+            <button id="btnFormulario">Cargar</button>
+        </div>
+    </div>
+    <div id="modalWindow">
+        <div class="modalWindowHeader">
+            <h3>Encabezado de ventana modal</h3>
+            <button id="btnCloseWindow"></button>
+        </div>
+        <div id="mwBody">
+            
+            <div id="mwHeader">
+                <h2>Formulario para Alta - Maestro de Artículos</h2>
+            </div>
+            <div class="formContainer" id="formContainer">
+                <form id="form">    
+                    <div class="divInterno">
+                        <label for="codArticulo">Código del Artículo</label>
+                        <input id="codArticulo" name="codArticulo" type="text" required>
+                    </div>
+                    <div class="divInterno">
+                        <label for="desc">Descripción</label>
+                        <input id="desc" name="desc" type="text" required>
+                    </div>
+                    <div class="divInterno">
+                        <label for="stock">Stock</label>
+                        <input id="stock" name="stock" type="number" required>
+                    </div>
+                    <div class="divInterno">
+                        <label for="cat">Categoría</label>
+                        <select id="cat" name="cat" required></select>
+                    </div>
+                    <div class="divInterno">
+                        <label for="marca">Marca</label>
+                        <input id="marca" name="marca" type="text" required>
+                    </div>
+                    <div class="divInterno">
+                        <label for="fechaAlta">Fecha Alta</label>
+                        <input id="fechaAlta" name="fechaAlta" type="date" required>
+                    </div>
+                    <div class="divInterno">
+                        <button id="btnSubmit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../jquery-3.6.0.js"></script>
+<script type="module" src="./main.js"></script>
+<script src="../catsJSON.js" type="text/javascript"></script>
+</html>

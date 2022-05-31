@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(184, 184, 184);
+}
+
+footer{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(184, 184, 184);
+}
+
+main{
+    height: 80%;
+    width: 100%;
+    background-color: rgb(207, 207, 207);
+}
+#divBotones{
+    position: fixed;
+    top: 0%;
+    right: 5%;
+    width: 300px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#divBotones button{
+    width: 40%;
+}
+
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    /* background-color: tomato; */
+}
+
+tfoot td {
+    text-align: center;
+}
+
+thead th, tfoot td {
+    border: 2px solid rgb(138, 138, 138);
+    background-color: rgb(202, 196, 191);
+}
+
+tbody {
+    height: 85.7%;
+    display: block;
+    overflow-y: auto;
+}
+
+thead, tbody tr, tfoot {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    height: 7%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(173, 173, 173);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(211, 211, 211);
+}
+
+tbody td {
+    padding-left: 1.5%;
+    text-align: center;
+}
+
+[campo-dato="codigo"],
+[campo-dato="valor"],
+#saldo {
+    width: 10%;
+}
+
+[campo-dato="fechaAlta"] {
+    width: 15%;
+}
+
+[campo-dato="cat"] {
+    width: 20%;
+}
+
+[campo-dato="saldo"] {
+    padding-left: 2%;
+    width: 10%;
+}

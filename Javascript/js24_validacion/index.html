@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Ejercicio 12 Variables Objeto Dato</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
+    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <meta name="author" content="Lautaro Salinas">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="divInputs">
+        <form id="form" action="none">
+            <label for="inDia">Dia:</label></br>
+            <input id="inDia" type="number" required></br></br>
+            <label for="inMes">Mes:</label></br>
+            <input id="inMes" type="number" required></br></br>
+        </form>
+        </br>
+    </div>
+    <div id="divControl">
+        <button id="btnReset">Reset</button>
+        <button id="btnEnviar">Enviar</button>
+    </div>
+    <div id="divPresentacion">
+    </div>
+    <script type="text/javascript">
+
+        var formulario = document.getElementById("form");
+        formulario.action = "./respuestaFormulario.html";
+        formulario.target = "_blank";
+        formulario.method = "GET";
+
+        var btnReset = document.querySelector("#btnReset");
+        var btnEnviar = document.querySelector("#btnEnviar");
+        var dia = document.querySelector('#inDia');
+        var mes = document.querySelector('#inMes');
+
+        function chequearRango (obj, val)
+        {
+            if (obj.value<1 || obj.value>val)
+            {
+                alert("Por favor ingrese un valor entre 1 y " + val);
+                obj.value = "";
+            }
+        }
+
+        dia.onkeyup = function (){chequearRango(this,31);}
+        mes.onkeyup = function (){chequearRango(this,12);}
+
+
+        btnEnviar.onclick = function(){
+            if(dia.checkValidity() && mes.checkValidity()) {
+                var confirmaSend = confirm("¿Seguro quiere enviar el formulario?");
+                if(confirmaSend == true){
+                    formulario.submit();
+                    formulario.reset();
+                }
+                dia.select();
+            }else{
+                alert("Debe completar todos los campos")
+                if(!dia.checkValidity()) dia.select();
+                else mes.select();
+            }
+        }
+        btnReset.onclick = function(){
+            if(dia.checkValidity() || mes.checkValidity()) var confirmaReset = confirm("¿Seguro quiere vaciar el contenido?");
+            if(confirmaReset == true) form.reset();
+            dia.select();
+        }
+
+    </script>
+</body>
+</html>
