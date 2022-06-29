@@ -1,0 +1,54 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#extContainer{
+    width: 70%;
+    height: 80%;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#divDatoEntrada{
+    width: 30%;
+    height: 70%;
+    background-color: beige;
+}
+#divEncriptar{
+    display: flex;
+    width: 30%;
+    height: 70%;
+    background-color: bisque;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+}
+#divEstadoRequerimiento{
+    width: 30%;
+    height: 30%;
+    background-color: aquamarine;
+}
+
+#divResultado{
+    width: 40%;
+    height: 70%;
+    background-color: blanchedalmond;
+}
+
+button img {
+    width: 200px;
+}
+.estiloRecibiendo{
+    color: red;
+}

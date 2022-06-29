@@ -64,7 +64,7 @@ btnCargar.onclick = function() {
             newRow.appendChild(newCell)
             
             newCell = document.createElement("td");
-            newCell.setAttribute("campo-dato", "cat")
+            newCell.setAttribute("campo-dato", "familia")
             newCell.innerHTML = element.cat;
             newRow.appendChild(newCell)
             
