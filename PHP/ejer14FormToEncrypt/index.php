@@ -27,8 +27,8 @@
         echo "<p>Clave: " . $_GET['variableAEncriptar']. "</p>";
         echo "<p>Clave encriptada en MD5 (128 bits o 16 pares hexadecimales):<p>";
         echo md5($_GET['variableAEncriptar']);
-        echo "<p>Clave encriptada en SHA1 (160 bits o 20 pares hexadecimales):<p>";
-        echo sha1($_GET['variableAEncriptar']);
+        echo "<p>Clave encriptada en SHA512 (160 bits o 20 pares hexadecimales):<p>";
+        echo hash("sha512",$_GET['variableAEncriptar'],false);
     }
     else
     {

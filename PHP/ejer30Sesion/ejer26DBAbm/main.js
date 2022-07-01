@@ -174,9 +174,9 @@ function LlenarTabla(boolPopUp){
                 newCell = document.createElement("td");
                 newCell.setAttribute("campo-dato", "edicion")
                 newCell.innerHTML = "\
-                    <img src='../../Recursos/Imagenes/pdf.png' class='btCeldaPDF'></img>\
-                    <img src='../../Recursos/Imagenes/modi.png' class='btCeldaModi' id="+element.cod+"></img>\
-                    <img src='../../Recursos/Imagenes/delete.png' class='btCeldaDelete'></img>";
+                    <img src='../../../Recursos/Imagenes/pdf.png' class='btCeldaPDF'></img>\
+                    <img src='../../../Recursos/Imagenes/modi.png' class='btCeldaModi' id="+element.cod+"></img>\
+                    <img src='../../../Recursos/Imagenes/delete.png' class='btCeldaDelete'></img>";
                 newRow.appendChild(newCell)
 
                 document.getElementById("cuerpoTabla").appendChild(newRow);

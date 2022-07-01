@@ -598,3 +598,13 @@ table input {
         height: 85%;
     }
 }
+
+/*BTN SESION*/
+#btnCierraSesion
+{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 120px;
+    height: 40px;
+}

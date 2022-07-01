@@ -1,4 +1,5 @@
 <?php
+    include("./manejoSesion.inc.php");
     $objArticulos = new stdClass();
     $objArticulos->success = FALSE;
 

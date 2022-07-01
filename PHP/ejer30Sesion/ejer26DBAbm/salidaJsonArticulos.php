@@ -1,10 +1,14 @@
 <?php
+    include("./manejoSesion.inc.php");
+    $objArticulos = new stdClass(); // creo un objeto articulos
+    $objArticulos->success = FALSE;
+    $respuesta_estado = 'ERROR';
     // Connect to DB
     $conn = mysqli_connect("us-cdbr-east-05.cleardb.net", "bd611d13de2cb8", "a2a57e98", "heroku_90adcdb504ee3cd");
     //print if not connected
     if (!$conn) 
-    {echo 'conection error ' . mysqli_connect_error();}
-
+    {$respuesta_estado = 'Error al conectar a la base de datos ' . mysqli_connect_error();}
+    
     $sql = "SELECT cod, des, cat, val, sto, fec FROM art
     WHERE cod LIKE '%{$_GET['filtroCodigo']}%'
     and des LIKE '%{$_GET['filtroDescripcion']}%'
@@ -13,7 +17,6 @@
     and sto LIKE '%{$_GET['filtroSaldo']}%'
     and fec LIKE '%{$_GET['filtroFechaAlta']}%'";
     $sql = str_replace(array("\n", "\r"), '', $sql);
-
 
     if (isset($_GET['orden']))
     {
@@ -44,7 +47,10 @@
     $totalValor = 0;
     $totalStock = 0;
     $articulos=[];
+    
     if ($result->num_rows > 0) {
+        $objArticulos->success = TRUE;
+        $respuesta_estado = "Consulta de datos exitosa!";
         // output data of each row
         while($row = $result->fetch_assoc()) {
             $objArticulo = new stdclass;
@@ -60,14 +66,11 @@
         }
     }
 
-    $objArticulos = new stdClass(); // creo un objeto articulos
     $objArticulos->articulos=$articulos; // meto en objArticulos el array con objetos articulo
     $objArticulos->cuenta=count($articulos); // cuento cantidad de filas en array articulos
     $objArticulos->totalValor = $totalValor;
     $objArticulos->totalStock = $totalStock;
-    $objArticulos->query = $sql;
     mysqli_close($conn);
+    $objArticulos->respuesta_estado = $respuesta_estado;
     echo json_encode($objArticulos); // envio objArticulos como JSON al front
-
-    
 ?>

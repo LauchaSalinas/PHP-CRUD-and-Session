@@ -1,3 +1,7 @@
+<?php
+    include("./manejoSesion.inc.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +11,7 @@
     <title>PHP - Ejercicio 26 BD ABM</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="addsearch-category" content="Ejercitación Laboratorio 3 - UTN Haedo" />
-    <link rel="shortcut icon" href="../../Recursos/Imagenes/logo_favicon.ico">
+    <link rel="shortcut icon" href="../../../Recursos/Imagenes/logo_favicon.ico">
     <meta name="author" content="Lautaro Salinas">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,6 +62,7 @@
         <footer>
             <div id="totalRegistros"></div></br>
             <p>Pie del Formulario</p>
+            <a href="../destruirSesion.php"><button id="btnCierraSesion">Cerrar sesión</button></a>
         </footer>
         <div id="divBotones">
             <button id="btnMostrar">Mostrar</button>

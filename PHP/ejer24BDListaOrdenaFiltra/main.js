@@ -115,6 +115,7 @@ function LlenarTabla(){
         success: function(respuestaDelServer,estado) {
             $('#tabla tbody').empty();
             var objJson=JSON.parse(respuestaDelServer);
+            console.log(objJson);
             objJson.articulos.forEach(element => {
                 
                 newRow = document.createElement("tr");

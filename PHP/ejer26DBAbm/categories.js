@@ -1,9 +1,10 @@
 categories = `{
     "opciones": [
-        {"id": "001", "cat": "Guitarras Electricas"},
-        {"id": "002", "cat": "Guitarras Acústicas"},
-        {"id": "003", "cat": "Bajos Electricos"},
-        {"id": "004", "cat": "Baterias Acusticas"},
-        {"id": "005", "cat": "Baterias Electronicas"},
-        {"id": "006", "cat": "Teclados"}
+        {"id": "001", "cat": "GUITARRAS ELECTRICAS"},
+        {"id": "002", "cat": "GUITARRAS ACUSTICAS"},
+        {"id": "003", "cat": "BAJOS ELECTRICOS"},
+        {"id": "004", "cat": "BAJOS ACUSTICOS"},
+        {"id": "005", "cat": "BATERIAS ACUSTICAS"},
+        {"id": "006", "cat": "BATERIAS ELECTRONICAS"},
+        {"id": "007", "cat": "TECLADOS"}
 ]}`;
