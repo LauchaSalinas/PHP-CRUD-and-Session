@@ -137,7 +137,6 @@
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="module" src="./main.js"></script>
-<script src="./categories.js" type="text/javascript"></script>
 <script src="./columns.js" type="text/javascript"></script>
 </body>
 

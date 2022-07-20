@@ -111,9 +111,14 @@
 }
 #form{
     padding-left: 2%;
-    display: grid;
+    display: flex;
     align-content: center;
     width: 40%;
+    flex-wrap: wrap;
+}
+
+#form input{
+    height: 20px;
 }
 
 #form input

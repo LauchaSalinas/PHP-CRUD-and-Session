@@ -142,42 +142,42 @@ function LlenarTabla(boolPopUp){
                 newRow = document.createElement("tr");
 
                 newCell = document.createElement("td");
-                newCell.setAttribute("campo-dato", "codigo")
+                newCell.setAttribute("campo-dato", "codigo");
                 newCell.innerHTML = element.cod;
                 newRow.appendChild(newCell)
                 
                 newCell = document.createElement("td");
-                newCell.setAttribute("campo-dato", "cat")
+                newCell.setAttribute("campo-dato", "cat");
                 newCell.innerHTML = element.cat;
                 newRow.appendChild(newCell)
                 
                 newCell = document.createElement("td");
-                newCell.setAttribute("campo-dato", "valor")
+                newCell.setAttribute("campo-dato", "valor");
                 newCell.innerHTML = element.val;
                 newRow.appendChild(newCell)
                 
                 newCell = document.createElement("td");
-                newCell.setAttribute("campo-dato", "descripcion")
+                newCell.setAttribute("campo-dato", "descripcion");
                 newCell.innerHTML = element.desc;
                 newRow.appendChild(newCell)
                 
                 newCell = document.createElement("td");
-                newCell.setAttribute("campo-dato", "fechaAlta")
+                newCell.setAttribute("campo-dato", "fechaAlta");
                 newCell.innerHTML = element.fechaAlta;
                 newRow.appendChild(newCell)
                 
                 newCell = document.createElement("td");
-                newCell.setAttribute("campo-dato", "saldo")
+                newCell.setAttribute("campo-dato", "saldo");
                 newCell.innerHTML = element.stock;
                 newRow.appendChild(newCell)
 
                 newCell = document.createElement("td");
-                newCell.setAttribute("campo-dato", "edicion")
+                newCell.setAttribute("campo-dato", "edicion");
                 newCell.innerHTML = "\
                     <img src='../../Recursos/Imagenes/pdf.png' class='btCeldaPDF'></img>\
                     <img src='../../Recursos/Imagenes/modi.png' class='btCeldaModi' id="+element.cod+"></img>\
                     <img src='../../Recursos/Imagenes/delete.png' class='btCeldaDelete'></img>";
-                newRow.appendChild(newCell)
+                newRow.appendChild(newCell);
 
                 document.getElementById("cuerpoTabla").appendChild(newRow);
             });//cierra for each

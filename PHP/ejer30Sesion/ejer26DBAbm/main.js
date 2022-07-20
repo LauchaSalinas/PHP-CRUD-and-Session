@@ -1,5 +1,4 @@
 var objJson;
-var cats = JSON.parse(categories);
 var cols = JSON.parse(columns);
 var newRow;
 var newCell;
@@ -8,19 +7,30 @@ var newCell;
 
 $(function() {
     var newOpt;
-    //cargar opciones para categorias de ventana modal
-    cats.opciones.forEach(element => {
-        newOpt = document.createElement("option");
-
-        newOpt.setAttribute("value", element.cat);
+    //
+    var cats;
+    var request = $.ajax({
+        type: "GET",
+        url: "./FillCats.php",
+        success: function(respuestaDelServer) {
+            cats=JSON.parse(respuestaDelServer);
+            cats.opciones.forEach(element => {
+                newOpt = document.createElement("option");
         
-        if( parseInt(element.id) == 0 ){
-            newOpt.setAttribute("selected", true);
-        }
-        newOpt.innerHTML = newOpt.value;
+                newOpt.setAttribute("value", element);
+                
+                // if( parseInt(element) == 0 ){
+                //     newOpt.setAttribute("selected", true);
+                // }
+                newOpt.innerHTML = newOpt.value;
+        
+                document.getElementById("cat").appendChild(newOpt);   
+            });
+        }//cierra funcion asignada al success
+    });//cierra ajax
+    //cargar opciones para categorias de ventana modal
 
-        document.getElementById("cat").appendChild(newOpt);   
-    });
+
     //cargar opciones para select de orden de divBotones
     cols.opciones.forEach(element => {
         newOpt = document.createElement("option");
@@ -382,3 +392,9 @@ $("#ordenSaldo").click(function (){
 document.getElementById("orden").addEventListener("change",function(){
     LlenarTabla()
 });
+/*  
+
+
+
+
+*/
